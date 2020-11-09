@@ -1,7 +1,6 @@
 # import the opencv library 
 import cv2 
   
-  
 # define a video capture object 
 vid = cv2.VideoCapture(0) 
   
@@ -13,7 +12,7 @@ while(True):
   
     # Display the resulting frame 
     cv2.imshow('frame', frame) 
-      
+    print(frame.shape)
     # the 'q' button is set as the 
     # quitting button you may use any 
     # desired button of your choice 
