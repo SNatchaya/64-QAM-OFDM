@@ -1,5 +1,7 @@
 # import the opencv library 
 import cv2 
+import numpy as np
+import math as math
   
 # define a video capture object 
 vid = cv2.VideoCapture(0) 
@@ -12,6 +14,7 @@ while(True):
     cv2.imshow('frame', frame) 
 
     print(frame.shape)
+
     # the 'q' button is set as the 
     # quitting button you may use any 
     # desired button of your choice 
@@ -22,3 +25,5 @@ while(True):
 vid.release() 
 # Destroy all the windows 
 cv2.destroyAllWindows() 
+
+binary = np.zeros((len(frame),4))
