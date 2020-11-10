@@ -1,6 +1,6 @@
 import numpy as np
 import math as math
-a = [5,6,3]
+a = [[],[],[]]
 binary = np.zeros((len(a),4))
 print(a)
 
