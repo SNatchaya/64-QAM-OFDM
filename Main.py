@@ -5,9 +5,7 @@ import cv2
 vid = cv2.VideoCapture(0) 
 
 while(True): 
-      
-    # Capture the video frame 
-    # by frame 
+    # Capture the video frame by frame
     ret, frame = vid.read() 
   
     # Display the resulting frame 
